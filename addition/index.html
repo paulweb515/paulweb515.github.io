@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/addition.js"></script>
+
+<script>
+window.onload = function () {
+	add_init(window, document);
+	document.getElementById("answer").focus();
+};
+
+</script>
+</head>
+<body>
+	<h1 style="text-align: center" id="title"></h1>
+	<div class="main">
+	<p class="entry">&nbsp;&nbsp;<span id="top"></span> <br/>
+	+&nbsp;<span id="bottom"></span><br />________ <br/>
+		&nbsp;&nbsp;<input type="text" id="answer" name="answer" onchange="add_validate(window,this);"/><span id="correct">&nbsp;</span></p>
+	<p style="text-align: left">Correct: <span id="answered">&nbsp;</span><br />
+	Total: <span id="total">&nbsp;</span></p>
+	<p>
+		<button onclick="add_clear(window);">Clear</button>
+	</p>
+	</div>
+	<p id="log"></p>
+</body>
+</htnm
